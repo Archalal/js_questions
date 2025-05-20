@@ -95,17 +95,7 @@ console.log(arr5);
 
 
 //Q1. Program to print the series: 14, 28, 20, 40, 32, 64, ... for N = 10
-let n=10;
-let firstNumber=14
-for(i=1;i<=n;i++){
-    console.log(firstNumber);
-    if(i%2!=0){
-        firstNumber =firstNumber*2
-    }else{
-        firstNumber -=8
-    }
-    
-}
+
 
 //1. Reverse a number (not a string)
 let number=123
@@ -183,3 +173,5 @@ arr8.filter((a)=>
     !duplicatedValue.includes(a)&&duplicatedValue.push(a)
 )
 console.log(duplicatedValue);
+
+

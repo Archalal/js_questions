@@ -46,9 +46,6 @@ for(i=1;i<=10;i++){
 }
 
 //✅ Find the largest/smallest number in an array
-let arr=[1,2,7,9]
-let largest=arr.reduce((a,b)=>a>b?a:b)
-console.log("largest no is",largest);
 
 
 //✅ Find the sum of digits of a number
@@ -123,5 +120,20 @@ for(i=1;i<=20;i++){
   }
     
 }
+let n=10;
+let firstNumber=14
+for(i=1;i<=n;i++){
+    console.log(firstNumber);
+    if(i%2!=0){
+        firstNumber =firstNumber*2
+    }else{
+        firstNumber -=8
+    }
+    
+}
+let arr=[1,2,7,9]
+let largest=arr.reduce((a,b)=>a<b?a:b)
+console.log("largest no is",largest);
+
 
 
