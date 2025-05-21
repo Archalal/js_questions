@@ -137,3 +137,17 @@ console.log("largest no is",largest);
 
 
 
+var a=1
+var a=2
+console.log(a);
+
+greet(); // ✅ Works!
+
+function greet() {
+  console.log("Hello!");
+}
+
+let g=10
+g +=10
+console.log(g);
+
