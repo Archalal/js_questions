@@ -141,7 +141,7 @@ var a=1
 var a=2
 console.log(a);
 
-greet(); // ✅ Works!
+greet(); 
 
 function greet() {
   console.log("Hello!");
