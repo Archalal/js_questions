@@ -175,14 +175,14 @@ console.log(odd)
 
 
 // / Q2. Program to print the series: 1296, 648, 216, 108, 36, ... for N = 6
-let limit1=6
-let firstNo1=1296
-for(i=1;i<=limit1;i++){
-    console.log(firstNo1);
-    if(i%2!=0){
-        firstNo1 =firstNo1/2
-    }else{
-        firstNo1=firstNo1/3
-    }
+// let limit1=6
+// let firstNo1=1296
+// for(i=1;i<=limit1;i++){
+//     console.log(firstNo1);
+//     if(i%2!=0){
+//         firstNo1 =firstNo1/2
+//     }else{
+//         firstNo1=firstNo1/3
+//     }
     
-}
+// }
