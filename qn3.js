@@ -186,3 +186,28 @@ for(i=1;i<=limit1;i++){
     }
     
 }
+function countVowels(str) {
+  const vowels = 'aeiouAEIOU';
+  let count = 0;
+  for (let char of str) {
+    if (vowels.includes(char)) count++;
+  }
+  return count;
+}
+
+console.log(countVowels("javascript")); // Output: 3
+function isPrime(num) {
+  if (num <= 1) return false;
+  for (let i = 2; i <= Math.sqrt(num); i++) {
+    if (num % i === 0) return false;
+  }
+  return true;
+}
+
+console.log(isPrime(7)); // true
+console.log(isPrime(4)); // false
+function reverseString(str) {
+  return str.split('').reverse().join('');
+}
+
+console.log(reverseString("hello")); // Output: "olleh"
