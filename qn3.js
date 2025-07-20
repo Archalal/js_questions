@@ -229,3 +229,28 @@ for (let i = 1; i <= 20; i++) {
     console.log(i);
   }
 }
+function isPrime(num) {
+  if (num < 2) return false;
+  for (let i = 2; i <= Math.sqrt(num); i++) {
+    if (num % i === 0) return false;
+  }
+  return true;
+}
+
+console.log(isPrime(7)); // true
+console.log(isPrime(10)); // false
+function fibonacci(n) {
+  let a = 0, b = 1;
+  for (let i = 0; i < n; i++) {
+    console.log(a);
+    [a, b] = [b, a + b];
+  }
+}
+
+fibonacci(5);
+// Output: 0, 1, 1, 2, 3
+function findMax(arr) {
+  return Math.max(...arr);
+}
+
+console.log(findMax([2, 7, 3, 9, 1])); // 9
