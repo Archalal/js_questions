@@ -186,4 +186,20 @@ for(i=1;i<=limit1;i++){
         firstNo1=firstNo1/3
     }
     
+}// Greet a user
+function greet(name) {
+  return "Hello, " + name + "!";
 }
+
+console.log(greet("Archa")); // Output: Hello, Archa!
+function outer() {
+  let count = 0;
+  return function inner() {
+    count++;
+    console.log(count);
+  };
+}
+
+const counter = outer();
+counter(); // 1
+counter(); // 2
