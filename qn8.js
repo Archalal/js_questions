@@ -203,3 +203,36 @@ function outer() {
 const counter = outer();
 counter(); // 1
 counter(); // 2
+function findDuplicates(arr) {
+  const seen = new Set();
+  const duplicates = [];
+
+  for (let item of arr) {
+    if (seen.has(item)) {
+      duplicates.push(item);
+    } else {
+      seen.add(item);
+    }
+  }
+
+  return duplicates;
+}
+
+console.log(findDuplicates([1, 2, 3, 2, 4, 5, 1])); // [2, 1]
+for (let i = 1; i <= 20; i++) {
+  if (i % 3 === 0 && i % 5 === 0) {
+    console.log("FizzBuzz");
+  } else if (i % 3 === 0) {
+    console.log("Fizz");
+  } else if (i % 5 === 0) {
+    console.log("Buzz");
+  } else {
+    console.log(i);
+  }
+}
+function factorial(n) {
+  if (n === 0) return 1;
+  return n * factorial(n - 1);
+}
+
+console.log(factorial(5)); // 120
